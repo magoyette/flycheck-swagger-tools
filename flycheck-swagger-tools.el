@@ -61,7 +61,7 @@ See URL `https://github.com/apigee-127/swagger-tools'."
      "\\(.\\|\n\\)*\\([[:space:]]\\|\"\\|\\'\\)*swagger\\([[:space:]]\\|\"\\|\\'\\)*:[[:space:]]*[\"\\']2.0[\"\\'].*"
      ;; Need to avoid stack overflow for multi-line regex
      (buffer-substring 1 (min (buffer-size)
-                              swagger-tools-swagger-element-predicate))))
+                              swagger-tools-predicate-regexp-match-limit))))
   :error-patterns
   ((warning line-start "  " (message (one-or-more not-newline)
                                      "is not used"
