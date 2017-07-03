@@ -86,7 +86,7 @@ See URL `https://github.com/apigee-127/swagger-tools'."
         (unless (flycheck-error-line err)
           (setf (flycheck-error-line err) 1)))
       errors))
-  :modes (json-mode yaml-mode))
+  :modes (json-mode swagger2-yaml-mode yaml-mode))
 
 (add-to-list 'flycheck-checkers 'swagger-tools)
 
