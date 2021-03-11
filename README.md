@@ -2,19 +2,21 @@
 
 An Emacs Flycheck checker for Swagger YAML and JSON files that uses [swagger-tools](https://github.com/apigee-127/swagger-tools).
 
-flycheck-swagger-tools is still under initial development and might not be stable.
+This repository is archived. The development of [swagger-tools](https://github.com/apigee-127/swagger-tools) appears interrupted.
+
+[flycheck-swagger-cli](https://github.com/magoyette/flycheck-swagger-cli) can be used instead. [swagger-cli](https://github.com/APIDevTools/swagger-cli) supports both OpenAPI 2 and 3.
 
 ## Configuration
 
 [swagger-tools](https://github.com/apigee-127/swagger-tools) must be installed.
 
-``` shell
+```shell
 npm install -g swagger-tools
 ```
 
 The checker can be activating by requiring this package.
 
-``` emacs-lisp
+```emacs-lisp
 (require 'flycheck-swagger-tools)
 ```
 
